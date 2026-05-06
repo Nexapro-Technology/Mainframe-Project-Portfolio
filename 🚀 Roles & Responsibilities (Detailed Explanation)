@@ -1,0 +1,127 @@
+🔹 1. Data Extraction from Mainframe (VSAM / PS Files)
+
+We worked with VSAM and flat files containing data in EBCDIC format, which is not directly readable in modern systems.
+
+👉 Work done:
+
+Extracted raw data from mainframe datasets
+Handled different file structures and record formats
+Ensured data integrity during extraction
+
+⚠️ Challenges:
+
+EBCDIC data is not human-readable
+Different file layouts caused inconsistencies
+Large file sizes required optimized processing
+🔹 2. EBCDIC to Readable Format Conversion
+
+The core task was converting binary EBCDIC data into meaningful readable data.
+
+👉 Work done:
+
+Used COBOL programs to decode EBCDIC data
+Applied COPYBOOK mapping to interpret data fields
+Converted raw bytes into structured records
+
+⚠️ Challenges:
+
+Incorrect mapping could corrupt entire data
+Handling special characters and encoding issues
+Maintaining accuracy across multiple files
+🔹 3. COBOL & Copybook-Based Data Mapping
+
+COPYBOOKs were used to define the structure of data.
+
+👉 Work done:
+
+Analyzed COPYBOOK layouts
+Mapped fields to corresponding database columns
+Ensured correct data types and field lengths
+
+⚠️ Challenges:
+
+Complex nested structures in COPYBOOKs
+Misalignment of fields caused incorrect output
+Required deep understanding of legacy systems
+🔹 4. Java-Based Tool Development (Frontend + Integration)
+
+A Java-based tool was developed to manage the entire process.
+
+👉 Work done:
+
+Built UI for uploading files and triggering jobs
+Integrated Java with COBOL backend
+Automated data flow from mainframe to database
+
+⚠️ Challenges:
+
+Integration between old (COBOL) and modern (Java) systems
+Handling errors during runtime
+Ensuring smooth communication between components
+🔹 5. Data Loading into SQL Server (ETL Process)
+
+After transformation, data was loaded into SQL Server tables.
+
+👉 Work done:
+
+Designed SQL tables based on COPYBOOK structure
+Automated data insertion using Java
+Ensured consistency and validation
+
+⚠️ Challenges:
+
+Handling large data volume
+Maintaining performance during bulk inserts
+Preventing data duplication or loss
+🔹 6. Multi-File Data Migration & Automation
+
+The system handled multiple input files simultaneously.
+
+👉 Work done:
+
+Automated batch processing
+Managed dependencies between files
+Scheduled and monitored jobs
+
+⚠️ Challenges:
+
+File dependency issues
+Processing failures in batch jobs
+Ensuring complete migration without missing data
+🔹 7. Testing, Debugging & Performance Optimization
+
+Testing was critical due to the sensitivity of data.
+
+👉 Work done:
+
+Compared before vs after data outputs
+Fixed data mismatches and errors
+Optimized processing speed
+
+⚠️ Challenges:
+
+Identifying errors in huge datasets
+Debugging legacy + modern integration issues
+Reducing execution time
+🔹 8. Production Support & Issue Resolution
+
+Post-deployment support ensured system stability.
+
+👉 Work done:
+
+Provided real-time issue resolution
+Monitored production environment
+Fixed environment-related issues
+
+⚠️ Challenges:
+
+Differences between dev and production environments
+Urgent issue handling under time pressure
+Ensuring zero downtime
+🎯 Final Impact (What Client Got)
+
+✔ Converted unreadable data into structured format
+✔ Automated ETL process
+✔ Improved data accessibility
+✔ Reduced manual effort
+✔ Faster and reliable system
